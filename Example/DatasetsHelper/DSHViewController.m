@@ -7,6 +7,7 @@
 //
 
 #import "DSHViewController.h"
+@import DatasetsHelper;
 
 @interface DSHViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
+    datasetsHelper.sayHello;
 }
 
 - (void)didReceiveMemoryWarning
