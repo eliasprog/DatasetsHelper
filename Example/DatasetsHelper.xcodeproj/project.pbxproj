@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C238F85747F8FB5592AF6FA /* Pods_DatasetsHelper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA58B728C83155F4FDF439 /* Pods_DatasetsHelper_Example.framework */; };
 		18EFC50BED1816647C40AAF2 /* Pods_DatasetsHelper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E85782EF8417004336B7E4 /* Pods_DatasetsHelper_Tests.framework */; };
+		27B4E41026A9AE9300B6FF9C /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27B4E40F26A9AE9300B6FF9C /* File.txt */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		23E2B0E02F64FE8C9F695F36 /* Pods-DatasetsHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatasetsHelper_Example.release.xcconfig"; path = "Target Support Files/Pods-DatasetsHelper_Example/Pods-DatasetsHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		27B4E40F26A9AE9300B6FF9C /* File.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
 		489629492498FFDB7CCB869E /* Pods-DatasetsHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatasetsHelper_Example.debug.xcconfig"; path = "Target Support Files/Pods-DatasetsHelper_Example/Pods-DatasetsHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DatasetsHelper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatasetsHelper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,9 +65,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DF6173EB7A1EAC072AD7C4B /* Pods-DatasetsHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatasetsHelper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DatasetsHelper_Tests/Pods-DatasetsHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C6EC17463B245E253F0313F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DCD24F1A34A53D3E86838990 /* DatasetsHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DatasetsHelper.podspec; path = ../DatasetsHelper.podspec; sourceTree = "<group>"; };
-		E73E0A250CD3A4F13F65163F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C6EC17463B245E253F0313F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DCD24F1A34A53D3E86838990 /* DatasetsHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DatasetsHelper.podspec; path = ../DatasetsHelper.podspec; sourceTree = "<group>"; };
+		E73E0A250CD3A4F13F65163F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FCEA58B728C83155F4FDF439 /* Pods_DatasetsHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatasetsHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 		6003F593195388D20070C39A /* Example for DatasetsHelper */ = {
 			isa = PBXGroup;
 			children = (
+				27B4E40F26A9AE9300B6FF9C /* File.txt */,
 				6003F59C195388D20070C39A /* DSHAppDelegate.h */,
 				6003F59D195388D20070C39A /* DSHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +196,6 @@
 				8DF6173EB7A1EAC072AD7C4B /* Pods-DatasetsHelper_Tests.debug.xcconfig */,
 				6926997381D712CFFB5E8880 /* Pods-DatasetsHelper_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B4E41026A9AE9300B6FF9C /* File.txt in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
