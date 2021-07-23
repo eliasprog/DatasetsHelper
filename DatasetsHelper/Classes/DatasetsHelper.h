@@ -15,6 +15,6 @@
 - (void)sayHello;
 - (void)readFile: (NSString *) path ofType:(NSString *) type withHeader:(bool) containHeader;
 - (void)printDataset;
-@property(nonatomic, readwrite) NSMutableArray *dataset2;
+@property(nonatomic, strong) NSMutableArray *dataset;
 //@property NSNumber *num;
 @end
