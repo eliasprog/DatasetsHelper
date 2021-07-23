@@ -19,7 +19,10 @@
 {
     [super viewDidLoad];
     DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
+    
+    [datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true];
     datasetsHelper.sayHello;
+    
 }
 
 - (void)didReceiveMemoryWarning
