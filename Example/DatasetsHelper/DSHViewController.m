@@ -20,7 +20,7 @@
     [super viewDidLoad];
     DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
     
-    [datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true];
+    [datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true columnTypes: @[@"string", @"float", @"string", @"int"]];
     datasetsHelper.printDataset;
     
 }
