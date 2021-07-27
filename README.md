@@ -1,15 +1,10 @@
 # DatasetsHelper
 
-[![CI Status](https://img.shields.io/travis/Elias Ferreira/DatasetsHelper.svg?style=flat)](https://travis-ci.org/Elias Ferreira/DatasetsHelper)
-[![Version](https://img.shields.io/cocoapods/v/DatasetsHelper.svg?style=flat)](https://cocoapods.org/pods/DatasetsHelper)
-[![License](https://img.shields.io/cocoapods/l/DatasetsHelper.svg?style=flat)](https://cocoapods.org/pods/DatasetsHelper)
-[![Platform](https://img.shields.io/cocoapods/p/DatasetsHelper.svg?style=flat)](https://cocoapods.org/pods/DatasetsHelper)
+DatasetsHelper is a framework to ho help people to print, see and edit Datasets files content.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -20,9 +15,23 @@ it, simply add the following line to your Podfile:
 pod 'DatasetsHelper'
 ```
 
-## Author
+## How to use it
 
-Elias Ferreira, eliasferreira.pro@gmail.com
+Import the module:
+
+```objc
+@import DatasetsHelper;
+```
+
+Create an instance of DatasetsHelper:
+
+```objc
+DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
+```
+
+## Authors
+
+Elias Ferreira, Mateus Nobre.
 
 ## License
 
