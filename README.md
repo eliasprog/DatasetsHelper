@@ -19,13 +19,13 @@ pod 'DatasetsHelper'
 
 ### Import the module:
 
-```objectivec
+```objc
 @import DatasetsHelper;
 ```
 
 ### Create an instance of DatasetsHelper:
 
-```swift
+```objc
 DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
 ```
 
@@ -37,7 +37,7 @@ DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
 
 * Then, pass the data type to each colum.
 
-```objectivec
+```objc
 [datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true columnTypes: @[@"string", @"string", @"string", @"string"]];
 ```
 
@@ -45,13 +45,13 @@ DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
 
 * Call the function `getDataset`
 
-```swift
+```objc
 NSArray * dataset = [datasetsHelper getDataset];
 ```
 
 * The result is an bidirectional array. Access it by the indexes.
 
-```swift
+```objc
 NSLog(@"%@", dataset[0][0]);
 ```
 
