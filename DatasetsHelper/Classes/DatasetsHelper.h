@@ -13,8 +13,9 @@
 
 @interface DatasetsHelper : NSObject
 - (void)sayHello;
-- (void)readFile: (NSString *) path ofType:(NSString *) type withHeader:(bool) containHeader;
+- (void)readFile: (NSString *) path ofType:(NSString *) type withHeader:(bool) containHeader columnTypes: (NSArray*) columnTypes;
 - (void)printDataset;
+- (NSArray *) getDataset;
 @property(nonatomic, strong) NSMutableArray *dataset;
 //@property NSNumber *num;
 @end
