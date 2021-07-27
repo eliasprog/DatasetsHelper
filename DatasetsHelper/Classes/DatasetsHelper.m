@@ -87,11 +87,22 @@
 }
 
 - (void)printDataset {
-    for(int l = 0; l < [_dataset count]; l++) {
-        for(int c = 0; c < [_dataset[0] count]; c++) {
-            NSLog(@"%@", _dataset[l][c] );
+    NSMutableString *strPrint= [[NSMutableString alloc]init];
+    [strPrint appendFormat:@"\n"] ;
+    for(int c = 0; c < [_dataset[0] count]; c++) {
+        for(int l = 0; l < [_dataset count]; l++) {
+            [strPrint appendString: _dataset[l][c]];
+            if(l < [_dataset count] - 1) [strPrint appendFormat: @", "];
         }
+        [strPrint appendFormat:@"\n"] ;
     }
+    NSLog(@"%@", strPrint);
 }
 
+- (NSArray *) getDataset {
+    return _dataset;
+}
+ 
 @end
+
+
