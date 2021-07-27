@@ -17,16 +17,42 @@ pod 'DatasetsHelper'
 
 ## How to use it
 
-Import the module:
+### Import the module:
 
-```objc
+```objectivec
 @import DatasetsHelper;
 ```
 
-Create an instance of DatasetsHelper:
+### Create an instance of DatasetsHelper:
 
-```objc
+```swift
 DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
+```
+
+### To read a file containing a data set:
+
+* Call the function `readFile` passing the name of the file and extension.
+
+* Pass true to `withHeader` parameter if your file has a header.
+
+* Then, pass the data type to each colum.
+
+```objectivec
+[datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true columnTypes: @[@"string", @"string", @"string", @"string"]];
+```
+
+### To get the data from data set file:
+
+* Call the function `getDataset`
+
+```swift
+NSArray * dataset = [datasetsHelper getDataset];
+```
+
+* The result is an bidirectional array. Access it by the indexes.
+
+```swift
+NSLog(@"%@", dataset[0][0]);
 ```
 
 ## Authors
