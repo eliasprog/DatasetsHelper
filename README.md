@@ -1,15 +1,10 @@
 # DatasetsHelper
 
-[![CI Status](https://img.shields.io/travis/Elias Ferreira/DatasetsHelper.svg?style=flat)](https://travis-ci.org/Elias Ferreira/DatasetsHelper)
-[![Version](https://img.shields.io/cocoapods/v/DatasetsHelper.svg?style=flat)](https://cocoapods.org/pods/DatasetsHelper)
-[![License](https://img.shields.io/cocoapods/l/DatasetsHelper.svg?style=flat)](https://cocoapods.org/pods/DatasetsHelper)
-[![Platform](https://img.shields.io/cocoapods/p/DatasetsHelper.svg?style=flat)](https://cocoapods.org/pods/DatasetsHelper)
+DatasetsHelper is a framework to ho help people to print, see and edit Datasets files content.
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -20,9 +15,49 @@ it, simply add the following line to your Podfile:
 pod 'DatasetsHelper'
 ```
 
-## Author
+## How to use it
 
-Elias Ferreira, eliasferreira.pro@gmail.com
+### Import the module:
+
+```objc
+@import DatasetsHelper;
+```
+
+### Create an instance of DatasetsHelper:
+
+```objc
+DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
+```
+
+### To read a file containing a data set:
+
+* Call the function `readFile` passing the name of the file and extension.
+
+* Pass true to `withHeader` parameter if your file has a header.
+
+* Then, pass the data type to each colum.
+
+```objc
+[datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true columnTypes: @[@"string", @"string", @"string", @"string"]];
+```
+
+### To get the data from data set file:
+
+* Call the function `getDataset`
+
+```objc
+NSArray * dataset = [datasetsHelper getDataset];
+```
+
+* The result is an bidirectional array. Access it by the indexes.
+
+```objc
+NSLog(@"%@", dataset[0][0]);
+```
+
+## Authors
+
+Elias Ferreira, Mateus Nobre.
 
 ## License
 
