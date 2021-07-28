@@ -250,7 +250,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Elias Ferreira";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VV557L4WY2;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = VV557L4WY2;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -498,6 +502,7 @@
 			baseConfigurationReference = 489629492498FFDB7CCB869E /* Pods-DatasetsHelper_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VV557L4WY2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DatasetsHelper/DatasetsHelper-Prefix.pch";
 				INFOPLIST_FILE = "DatasetsHelper/DatasetsHelper-Info.plist";
@@ -514,6 +519,7 @@
 			baseConfigurationReference = 23E2B0E02F64FE8C9F695F36 /* Pods-DatasetsHelper_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VV557L4WY2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DatasetsHelper/DatasetsHelper-Prefix.pch";
 				INFOPLIST_FILE = "DatasetsHelper/DatasetsHelper-Info.plist";
@@ -530,6 +536,7 @@
 			baseConfigurationReference = 8DF6173EB7A1EAC072AD7C4B /* Pods-DatasetsHelper_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VV557L4WY2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -555,6 +562,7 @@
 			baseConfigurationReference = 6926997381D712CFFB5E8880 /* Pods-DatasetsHelper_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VV557L4WY2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
