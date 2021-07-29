@@ -23,7 +23,7 @@
     
     [datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true columnTypes: @[@"float", @"float", @"float", @"float", @"string"]];
     //datasetsHelper.printDataset;
-    //[datasetsHelper printDataset];
+    [datasetsHelper printDataset];
     
     NSArray * dataset = [datasetsHelper getDataset];
     
@@ -31,7 +31,7 @@
     
     
     
-    [self knn:dataset withK:2 newValue: @[@4, @2, @3, @4] ];
+    //[self knn:dataset withK:2 newValue: @[@4, @2, @3, @4] ];
 }
 
 - (void)didReceiveMemoryWarning
