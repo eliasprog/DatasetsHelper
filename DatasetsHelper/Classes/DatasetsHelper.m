@@ -37,12 +37,17 @@
         [NSException raise:@"Invalid Data Types" format:@"Tipos de dados inválidoss"];
     }
     
+    _types = columnTypes;
+    if(containHeader)
+        _header = [[linesArray firstObject] componentsSeparatedByString:@","];
+    
     if(containHead) {
         numLines -= 1;
         startLine = 1;
     }
     
     NSArray *stringsData[numLines][numColumns];
+    
     
     for(int l = startLine; l < endLine; l++) {
         NSArray *lineColumns = [[linesArray objectAtIndex: l] componentsSeparatedByString:@","];
@@ -91,7 +96,21 @@
     [strPrint appendFormat:@"\n"] ;
     for(int c = 0; c < [_dataset[0] count]; c++) {
         for(int l = 0; l < [_dataset count]; l++) {
-            [strPrint appendString: _dataset[l][c]];
+            
+            if([_types[l]  isEqual: @"float"]) {
+                [strPrint appendString: [_dataset[l][c] stringValue]];
+            }
+            else if([_types[l]  isEqual: @"int"]){
+                [strPrint appendString: [_dataset[l][c] stringValue]];
+            }
+            
+            else if([_types[l]  isEqual: @"string"]){
+                [strPrint appendString: _dataset[l][c]];
+            }
+            else {
+                [strPrint appendString: _dataset[l][c]];
+            }
+            
             if(l < [_dataset count] - 1) [strPrint appendFormat: @", "];
         }
         [strPrint appendFormat:@"\n"] ;

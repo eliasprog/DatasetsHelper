@@ -9,5 +9,5 @@
 @import UIKit;
 
 @interface DSHViewController : UIViewController
-
+- (void)knn: (NSArray *) dataset withK: (int) k newValue: (NSArray *) newValue;
 @end

@@ -17,5 +17,7 @@
 - (void)printDataset;
 - (NSArray *) getDataset;
 @property(nonatomic, strong) NSMutableArray *dataset;
+@property(nonatomic, strong) NSArray *header;
+@property(nonatomic, strong) NSArray * types;
 //@property NSNumber *num;
 @end
