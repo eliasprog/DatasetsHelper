@@ -19,14 +19,24 @@ pod 'DatasetsHelper'
 
 ### Import the module:
 
+Obective-C:
 ```objc
 @import DatasetsHelper;
+```
+Swift:
+```swift
+import DatasetsHelper
 ```
 
 ### Create an instance of DatasetsHelper:
 
+Obective-C:
 ```objc
 DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
+```
+Swift:
+```swift
+let datasetsHelper = DatasetsHelper()
 ```
 
 ### To read a file containing a data set:
@@ -37,22 +47,37 @@ DatasetsHelper *datasetsHelper = [[DatasetsHelper alloc]init];
 
 * Then, pass the data type to each colum.
 
+Obective-C:
 ```objc
 [datasetsHelper readFile: @"File" ofType: @"txt" withHeader: true columnTypes: @[@"string", @"string", @"string", @"string"]];
+```
+Swift:
+```swift
+datasetsHelper.readFile("File", ofType: "txt", withHeader: true, columnTypes: ["string", "string", "string", "string"])
 ```
 
 ### To get the data from data set file:
 
 * Call the function `getDataset`
 
+Obective-C:
 ```objc
 NSArray * dataset = [datasetsHelper getDataset];
 ```
-
+Swift:
+```swift
+let dataset = datasetsHelper.getDataset()
+```
 * The result is an bidirectional array. Access it by the indexes.
 
+Obective-C:
 ```objc
 NSLog(@"%@", dataset[0][0]);
+```
+Swift:
+```swift
+let firstColum = dataset![0] as? [String]
+print(firstColum![0])
 ```
 
 ## Authors
