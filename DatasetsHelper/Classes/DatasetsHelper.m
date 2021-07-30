@@ -110,7 +110,6 @@
             else {
                 [strPrint appendString: _dataset[l][c]];
             }
-            
             if(l < [_dataset count] - 1) [strPrint appendFormat: @", "];
         }
         [strPrint appendFormat:@"\n"] ;
